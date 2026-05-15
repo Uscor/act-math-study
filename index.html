@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ACT Math Study</title>
+  <title>ACT Math Practice</title>
 </head>
 
 <body>
@@ -9,22 +9,24 @@
 
   <p id="question">What is 5 + 7?</p>
 
-  <input id="answer" placeholder="Type your answer">
-
-  <button onclick="checkAnswer()">Submit</button>
+  <button onclick="checkAnswer('10')">10</button>
+  <button onclick="checkAnswer('11')">11</button>
+  <button onclick="checkAnswer('12')">12</button>
+  <button onclick="checkAnswer('13')">13</button>
 
   <p id="result"></p>
 
   <script>
-    function checkAnswer() {
-      const userAnswer = document.getElementById("answer").value;
+    function checkAnswer(selected) {
+      const correctAnswer = "12";
 
-      if (userAnswer === "12") {
+      if (selected === correctAnswer) {
         document.getElementById("result").innerText = "Correct!";
       } else {
-        document.getElementById("result").innerText = "Try again.";
+        document.getElementById("result").innerText = "Incorrect. Try again.";
       }
     }
   </script>
+
 </body>
 </html>
