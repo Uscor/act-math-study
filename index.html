@@ -9,16 +9,16 @@
 
   <p id="question">5 + 7</p>
 
-  <button onclick="checkAnswer('10')">10</button>
-  <button onclick="checkAnswer('11')">11</button>
-  <button onclick="checkAnswer('12')">12</button>
-  <button onclick="checkAnswer('13')">13</button>
+  <button onclick="checkAnswer('a')">10</button>
+  <button onclick="checkAnswer('b')">11</button>
+  <button onclick="checkAnswer('c')">12</button>
+  <button onclick="checkAnswer('d')">13</button>
 
   <p id="result"></p>
 
   <script>
     function checkAnswer(selected) {
-      const correctAnswer = "12";
+      const correctAnswer = "c";
 
       if (selected === correctAnswer) {
         document.getElementById("result").innerText = "Correct";
