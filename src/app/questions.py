@@ -14,9 +14,9 @@ class Question:
     parameters: dict  # math variation, sampled
     guards: list  # reject a sample if any is false—list of python-evaluable boolean strings over the parameters
     stem: str  # the question text, slots in braces
-    derived: dict  # name: "python expression over parameters"
-    distractors: list  # wrong answers AS RULES;exactly 3 distractors -> 4 options total; list of dicts
-    authoring_notes: str  # see required-notes section
+    derived: dict  # python expression over parameters
+    distractors: list  # wrong answers AS RULES; exactly 3 distractors -> 4 options total; list of dicts
+    authoring_notes: str  # notes on the question
     is_modeling: bool = False  # True if math is wrapped in a real-world scenario; default val means must come last
 
 
