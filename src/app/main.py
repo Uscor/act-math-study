@@ -7,15 +7,6 @@
 # def read_root():
 #     return {"status": "ready to practice ACT math"}
 
-from dataclasses import dataclass
-
-questionDatabase = {0: "hi"}
-
-
-@dataclass
-class Question:
-    print()
-
 
 def main():
     phase = "launch"
@@ -30,7 +21,7 @@ def main():
         totalQuestions += 30
         for i in totalQuestions:
             # put question gen logic in another file + import
-            askQuestion()
+            askQuestion()  # pull from queue?
             totalQuestions -= 1
 
         # question loop with increment
